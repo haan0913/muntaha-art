@@ -1,0 +1,48 @@
+{
+  "site": {
+    "artistName": "Muntaha Rahman (Moon)",
+    "title": "Muntaha Rahman — Painter, Photographer",
+    "domain": "muntaha.art",
+    "url": "https://muntaha.art",
+    "description": "Muntaha Rahman (Moon) — painter and photographer working in oil and light. Originals and prints by inquiry."
+  },
+  "landing": {
+    "featuredArtworkId": "speakeasy",
+    "instagramLabel": "@muntahasworkofart",
+    "instagramUrl": "https://www.instagram.com/muntahasworkofart/"
+  },
+  "about": {
+    "title": "About",
+    "paragraphs": [
+      "I'm a painter and photographer raised in New York by parents who came from Bangladesh. We lived with very little — many of us under one roof — and for a long time, privacy felt like a luxury. My parents worked incredibly hard so that I could eventually have a room of my own, a space to sit with my emotions, explore my creativity, and discover who I was without interruption.",
+      "That same impulse runs through my work. I paint the objects, rooms, and people that hold the lives my parents set aside so I could live mine. I am a painter today because they gave me the opportunity to become one."
+    ],
+    "facts": [
+      { "label": "Practice", "value": "Painter, Photographer" },
+      { "label": "Education", "value": "Queens College, CUNY — BFA Painting, 2026" },
+      { "label": "Based in", "value": "New York" }
+    ],
+    "portraitImage": "assets/artwork/muntaha-portrait-gallery.jpg",
+    "portraitAlt": "Muntaha Rahman beside For Them, From Me at a gallery exhibition"
+  },
+  "contact": {
+    "email": "muntaharaiba@gmail.com",
+    "city": "New York",
+    "tagline": "Let's collaborate.",
+    "note": ""
+  },
+  "commerce": {
+    "mode": "inquiry-only",
+    "stripeStatus": "not-live",
+    "taxMode": "not-live",
+    "shippingRegion": "",
+    "originalsPolicy": "Originals are inquiry-only.",
+    "printsPolicy": "Coming soon."
+  },
+  "analytics": {
+    "googleMeasurementId": ""
+  },
+  "social": [
+    "https://www.instagram.com/muntahasworkofart/"
+  ]
+}

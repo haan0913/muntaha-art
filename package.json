@@ -1,0 +1,12 @@
+{
+  "name": "muntaha-art",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static artist portfolio for muntaha.art.",
+  "scripts": {
+    "build": "node tools/build-cloudflare.mjs",
+    "build:cloudflare": "node tools/build-cloudflare.mjs",
+    "preview": "python -m http.server 8788 --bind 127.0.0.1 --directory dist"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,412 @@
+{
+  "items": [
+    {
+      "id": "for-them-from-me",
+      "title": "For Them, From Me",
+      "year": "2025",
+      "medium": "Oil on canvas",
+      "dimensions": "36 × 24 in (91.44 × 60.96 cm)",
+      "aspectRatio": "1320 / 2000",
+      "collection": "Featured",
+      "description": "Exact artist-approved short caption pending. Do not paraphrase.",
+      "thesis": "I chose these particular objects for my painting because they remind me of everything my parents have endured, every sacrifice they made, every passion they set aside, every dream they quietly let go of. It's also a reminder of my childhood and how they raised me. All of it lingers in the background, aging with time. My parents never stopped moving. They have always been on the run, putting their own needs aside to provide for me. This painting is not just a representation of them; it is a way to preserve a part of who they are. My parents gave up so much of their own creativity so that I could embrace mine. I am a painter today because they gave me the opportunity to become one. Through this painting, I want to freeze a piece of their life to show them all they have done and to remind them of who they are. They were once great at many things — soccer, singing, painting — and above all, they have always been great parents. This work portrays them not just as parents or partners, but as people. This painting is for them to relive their lives, even if just for a little while.",
+      "image": "assets/artwork/for-them-from-me.jpg",
+      "imageMd": "assets/artwork/for-them-from-me-md.jpg",
+      "alt": "For Them, From Me — oil painting still life of objects representing parents",
+      "featured": true,
+      "tags": ["painting", "oil", "still life", "featured"],
+      "availabilityLabel": "Original by inquiry · Prints coming soon",
+      "original": { "saleMode": "inquiry-only", "priceLabel": "Inquire" },
+      "images": [
+        { "src": "assets/artwork/for-them-from-me.jpg", "alt": "For Them, From Me — full view", "caption": "Full view" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Archival print",
+          "description": "Open edition archival pigment print on matte fine-art paper.",
+          "status": "default",
+          "variants": [
+            { "sku": "FTFM_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "FTFM_8X12", "size": "Print 8 × 12 in", "material": "archival matte paper", "price": 45, "paymentLink": "" },
+            { "sku": "FTFM_12X18", "size": "Print 12 × 18 in", "material": "archival matte paper", "price": 95, "paymentLink": "" },
+            { "sku": "FTFM_18X24", "size": "Print 18 × 24 in", "material": "archival matte paper", "price": 175, "paymentLink": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charjon-1",
+      "title": "Chārjon (1 of 4)",
+      "year": "2025",
+      "medium": "Oil on canvas",
+      "dimensions": "12 × 12 in",
+      "aspectRatio": "1 / 1",
+      "collection": "Chārjon series",
+      "description": "Exact artist-approved short caption pending. Do not paraphrase.",
+      "thesis": "These paintings have a special place in my heart because they are of my best friends: My cousins. I wanted to paint something outside my comfort zone, since I usually focus on realism. When I came up with this idea of doing something more contemporary, I thought it should feel childlike. My cousins have been such a huge part of my childhood, so I decided to dedicate these paintings to them.\n\nI chose the theme of cats and fish because it comes from an inside joke we had when we were kids. I depicted us as the fish and showed our cat's emotions toward us. It has always been the four of us, and each painting represents one of us. I'm the youngest, and I was always spoiled, they took care of me and taught me everything they learned. Even though I was the youngest, I experienced everything alongside them. Appi and I have siblings who were also included in the paintings, because even though the focus is on the four of us, I still wanted to show our family as a whole.\n\nTime changes everything. In the end, I couldn't leave with them. Now we're all grown up, finding our own paths in life. They've moved to different places in search of who they are, and I'm here painting our childhood together.",
+      "image": "assets/artwork/charjon-1.jpg",
+      "imageMd": "assets/artwork/charjon-1-md.jpg",
+      "alt": "Chārjon — painting of a cat reaching toward a framed fish painting on a green wall",
+      "featured": true,
+      "tags": ["painting", "oil", "series", "featured"],
+      "availabilityLabel": "Original by inquiry · Prints coming soon",
+      "original": { "saleMode": "inquiry-only", "priceLabel": "Inquire" },
+      "images": [
+        { "src": "assets/artwork/charjon-1.jpg", "alt": "Chārjon 1 — full view", "caption": "Cat and fish painting on green wall" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Archival print",
+          "description": "Open edition archival pigment print on matte fine-art paper.",
+          "status": "default",
+          "variants": [
+            { "sku": "CHARJON1_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "CHARJON1_8X8", "size": "Print 8 × 8 in", "material": "archival matte paper", "price": 35, "paymentLink": "" },
+            { "sku": "CHARJON1_12X12", "size": "Print 12 × 12 in", "material": "archival matte paper", "price": 65, "paymentLink": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charjon-2",
+      "title": "Chārjon (2 of 4)",
+      "year": "2025",
+      "medium": "Oil on canvas",
+      "dimensions": "12 × 12 in",
+      "aspectRatio": "1 / 1",
+      "collection": "Chārjon series",
+      "description": "Exact artist-approved short caption pending. Do not paraphrase.",
+      "thesis": "These paintings have a special place in my heart because they are of my best friends: My cousins. I wanted to paint something outside my comfort zone, since I usually focus on realism. When I came up with this idea of doing something more contemporary, I thought it should feel childlike. My cousins have been such a huge part of my childhood, so I decided to dedicate these paintings to them.\n\nI chose the theme of cats and fish because it comes from an inside joke we had when we were kids. I depicted us as the fish and showed our cat's emotions toward us. It has always been the four of us, and each painting represents one of us. I'm the youngest, and I was always spoiled, they took care of me and taught me everything they learned. Even though I was the youngest, I experienced everything alongside them. Appi and I have siblings who were also included in the paintings, because even though the focus is on the four of us, I still wanted to show our family as a whole.\n\nTime changes everything. In the end, I couldn't leave with them. Now we're all grown up, finding our own paths in life. They've moved to different places in search of who they are, and I'm here painting our childhood together.",
+      "image": "assets/artwork/charjon-2.jpg",
+      "imageMd": "assets/artwork/charjon-2-md.jpg",
+      "alt": "Chārjon — black-and-white cat on a blue couch with a fish on the floor",
+      "featured": false,
+      "tags": ["painting", "oil", "series"],
+      "availabilityLabel": "Original by inquiry · Prints coming soon",
+      "original": { "saleMode": "inquiry-only", "priceLabel": "Inquire" },
+      "images": [
+        { "src": "assets/artwork/charjon-2.jpg", "alt": "Chārjon 2 — full view", "caption": "Cat on blue couch" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Archival print",
+          "description": "Open edition archival pigment print on matte fine-art paper.",
+          "status": "default",
+          "variants": [
+            { "sku": "CHARJON2_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "CHARJON2_8X8", "size": "Print 8 × 8 in", "material": "archival matte paper", "price": 35, "paymentLink": "" },
+            { "sku": "CHARJON2_12X12", "size": "Print 12 × 12 in", "material": "archival matte paper", "price": 65, "paymentLink": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charjon-3",
+      "title": "Chārjon (3 of 4)",
+      "year": "2025",
+      "medium": "Oil on canvas",
+      "dimensions": "12 × 12 in",
+      "aspectRatio": "1 / 1",
+      "collection": "Chārjon series",
+      "description": "Exact artist-approved short caption pending. Do not paraphrase.",
+      "thesis": "These paintings have a special place in my heart because they are of my best friends: My cousins. I wanted to paint something outside my comfort zone, since I usually focus on realism. When I came up with this idea of doing something more contemporary, I thought it should feel childlike. My cousins have been such a huge part of my childhood, so I decided to dedicate these paintings to them.\n\nI chose the theme of cats and fish because it comes from an inside joke we had when we were kids. I depicted us as the fish and showed our cat's emotions toward us. It has always been the four of us, and each painting represents one of us. I'm the youngest, and I was always spoiled, they took care of me and taught me everything they learned. Even though I was the youngest, I experienced everything alongside them. Appi and I have siblings who were also included in the paintings, because even though the focus is on the four of us, I still wanted to show our family as a whole.\n\nTime changes everything. In the end, I couldn't leave with them. Now we're all grown up, finding our own paths in life. They've moved to different places in search of who they are, and I'm here painting our childhood together.",
+      "image": "assets/artwork/charjon-4.jpg",
+      "imageMd": "assets/artwork/charjon-4-md.jpg",
+      "alt": "Chārjon — two cats and a goldfish on a pink wall scene",
+      "featured": false,
+      "tags": ["painting", "oil", "series"],
+      "availabilityLabel": "Original by inquiry · Prints coming soon",
+      "original": { "saleMode": "inquiry-only", "priceLabel": "Inquire" },
+      "images": [
+        { "src": "assets/artwork/charjon-4.jpg", "alt": "Chārjon 3 — full view", "caption": "Two cats and goldfish on pink and yellow" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Archival print",
+          "description": "Open edition archival pigment print on matte fine-art paper.",
+          "status": "default",
+          "variants": [
+            { "sku": "CHARJON3_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "CHARJON3_8X8", "size": "Print 8 × 8 in", "material": "archival matte paper", "price": 35, "paymentLink": "" },
+            { "sku": "CHARJON3_12X12", "size": "Print 12 × 12 in", "material": "archival matte paper", "price": 65, "paymentLink": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charjon-4",
+      "title": "Chārjon (4 of 4)",
+      "year": "2025",
+      "medium": "Oil on canvas",
+      "dimensions": "12 × 12 in",
+      "aspectRatio": "1 / 1",
+      "collection": "Chārjon series",
+      "description": "Exact artist-approved short caption pending. Do not paraphrase.",
+      "thesis": "These paintings have a special place in my heart because they are of my best friends: My cousins. I wanted to paint something outside my comfort zone, since I usually focus on realism. When I came up with this idea of doing something more contemporary, I thought it should feel childlike. My cousins have been such a huge part of my childhood, so I decided to dedicate these paintings to them.\n\nI chose the theme of cats and fish because it comes from an inside joke we had when we were kids. I depicted us as the fish and showed our cat's emotions toward us. It has always been the four of us, and each painting represents one of us. I'm the youngest, and I was always spoiled, they took care of me and taught me everything they learned. Even though I was the youngest, I experienced everything alongside them. Appi and I have siblings who were also included in the paintings, because even though the focus is on the four of us, I still wanted to show our family as a whole.\n\nTime changes everything. In the end, I couldn't leave with them. Now we're all grown up, finding our own paths in life. They've moved to different places in search of who they are, and I'm here painting our childhood together.",
+      "image": "assets/artwork/charjon-3.jpg",
+      "imageMd": "assets/artwork/charjon-3-md.jpg",
+      "alt": "Chārjon — cat under a desk with a clownfish painting on an easel",
+      "featured": false,
+      "tags": ["painting", "oil", "series"],
+      "availabilityLabel": "Original by inquiry · Prints coming soon",
+      "original": { "saleMode": "inquiry-only", "priceLabel": "Inquire" },
+      "images": [
+        { "src": "assets/artwork/charjon-3.jpg", "alt": "Chārjon 4 — full view", "caption": "Cat under desk with clownfish on easel" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Archival print",
+          "description": "Open edition archival pigment print on matte fine-art paper.",
+          "status": "default",
+          "variants": [
+            { "sku": "CHARJON4_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "CHARJON4_8X8", "size": "Print 8 × 8 in", "material": "archival matte paper", "price": 35, "paymentLink": "" },
+            { "sku": "CHARJON4_12X12", "size": "Print 12 × 12 in", "material": "archival matte paper", "price": 65, "paymentLink": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speakeasy",
+      "title": "Speakeasy",
+      "year": "2024",
+      "medium": "Oil on canvas",
+      "dimensions": "16 × 12 in",
+      "aspectRatio": "1533 / 2000",
+      "collection": "Still life",
+      "description": "Exact artist-approved short caption pending. Do not paraphrase.",
+      "thesis": "Paste exact artist-approved thesis / description here. Do not paraphrase.",
+      "image": "assets/artwork/speakeasy.jpg",
+      "imageMd": "assets/artwork/speakeasy-md.jpg",
+      "alt": "Speakeasy — oil painting of three glass bottles against an orange background",
+      "featured": true,
+      "tags": ["painting", "oil", "still life", "featured"],
+      "availabilityLabel": "Original by inquiry · Prints coming soon",
+      "original": { "saleMode": "inquiry-only", "priceLabel": "Inquire" },
+      "images": [
+        { "src": "assets/artwork/speakeasy.jpg", "alt": "Speakeasy — full view", "caption": "Full view" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Archival print",
+          "description": "Open edition archival pigment print on matte fine-art paper.",
+          "status": "default",
+          "variants": [
+            { "sku": "SPEAKEASY_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "SPEAKEASY_8X12", "size": "Print 8 × 12 in", "material": "archival matte paper", "price": 45, "paymentLink": "" },
+            { "sku": "SPEAKEASY_12X18", "size": "Print 12 × 18 in", "material": "archival matte paper", "price": 75, "paymentLink": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "barely-hanging",
+      "title": "Barely Hanging",
+      "year": "2025",
+      "medium": "Oil on canvas",
+      "dimensions": "16 × 12 in",
+      "aspectRatio": "1482 / 2000",
+      "collection": "Oil paintings",
+      "description": "Oil painting of a light fixture — the first object the artist chose for her own room.",
+      "thesis": "As immigrants from Bangladesh, my family and I lived with very little. There were many of us sharing one roof, and for a long time, having personal space was something I never experienced. Privacy felt like a luxury. My parents worked incredibly hard to eventually buy a house, and for the first time in my life, I had a room of my own.\nThat space became more than just a bedroom; it became a place where I could explore my creativity, sit with my emotions, and discover who I was without interruption. It was the first place that truly felt like mine.\nThe painting itself is of a light fixture, and that feels symbolic now. It was the very first thing I chose completely on my own for my room. At the time, it seemed like a small decision, but it represented something much bigger: independence, self-expression, and finally having the freedom to create a space that reflected me.",
+      "image": "assets/artwork/barely-hanging.jpg",
+      "imageMd": "assets/artwork/barely-hanging-md.jpg",
+      "alt": "Barely Hanging — oil painting of a red ceiling lamp",
+      "featured": false,
+      "tags": ["painting", "oil"],
+      "availabilityLabel": "Original by inquiry · Prints coming soon",
+      "original": { "saleMode": "inquiry-only", "priceLabel": "Inquire" },
+      "images": [
+        { "src": "assets/artwork/barely-hanging.jpg", "alt": "Barely Hanging — full view", "caption": "Full view" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Archival print",
+          "description": "Open edition archival pigment print on matte fine-art paper.",
+          "status": "default",
+          "variants": [
+            { "sku": "BARELY_HANGING_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "BARELY_HANGING_8X12", "size": "Print 8 × 12 in", "material": "archival matte paper", "price": 40, "paymentLink": "" },
+            { "sku": "BARELY_HANGING_12X18", "size": "Print 12 × 18 in", "material": "archival matte paper", "price": 70, "paymentLink": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lisbon-lemon-tree",
+      "title": "Lisbon Lemon Tree",
+      "year": "2025",
+      "medium": "Oil on canvas",
+      "dimensions": "12 × 9 in",
+      "aspectRatio": "1500 / 2000",
+      "collection": "Oil paintings",
+      "description": "Exact artist-approved short caption pending. Do not paraphrase.",
+      "thesis": "Paste exact artist-approved thesis / description here. Do not paraphrase.",
+      "image": "assets/artwork/lisbon-lemon-tree.jpg",
+      "imageMd": "assets/artwork/lisbon-lemon-tree-md.jpg",
+      "alt": "Lisbon Lemon Tree — oil painting of two lemons hanging from a branch",
+      "featured": false,
+      "tags": ["painting", "oil"],
+      "availabilityLabel": "Original by inquiry · Prints coming soon",
+      "original": { "saleMode": "inquiry-only", "priceLabel": "Inquire" },
+      "images": [
+        { "src": "assets/artwork/lisbon-lemon-tree.jpg", "alt": "Lisbon Lemon Tree — full view", "caption": "Full view" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Archival print",
+          "description": "Open edition archival pigment print on matte fine-art paper.",
+          "status": "default",
+          "variants": [
+            { "sku": "LISBON_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "LISBON_8X12", "size": "Print 8 × 12 in", "material": "archival matte paper", "price": 35, "paymentLink": "" },
+            { "sku": "LISBON_12X18", "size": "Print 12 × 18 in", "material": "archival matte paper", "price": 60, "paymentLink": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "still-david",
+      "title": "Still David",
+      "year": "2024",
+      "medium": "Oil on canvas",
+      "dimensions": "Dimensions on request",
+      "aspectRatio": "1535 / 2000",
+      "collection": "Oil paintings",
+      "description": "Exact artist-approved short caption pending. Do not paraphrase.",
+      "thesis": "Paste exact artist-approved thesis / description here. Do not paraphrase.",
+      "image": "assets/artwork/still-david.jpg",
+      "imageMd": "assets/artwork/still-david-md.jpg",
+      "alt": "Still David — oil painting after the bust of Michelangelo's David against deep red",
+      "featured": false,
+      "tags": ["painting", "oil", "study"],
+      "availabilityLabel": "Original by inquiry · Prints coming soon",
+      "original": { "saleMode": "inquiry-only", "priceLabel": "Inquire" },
+      "images": [
+        { "src": "assets/artwork/still-david.jpg", "alt": "Still David — full view", "caption": "Full view" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Archival print",
+          "description": "Open edition archival pigment print on matte fine-art paper.",
+          "status": "default",
+          "variants": [
+            { "sku": "STILL_DAVID_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "STILL_DAVID_8X12", "size": "Print 8 × 12 in", "material": "archival matte paper", "price": 40, "paymentLink": "" },
+            { "sku": "STILL_DAVID_12X18", "size": "Print 12 × 18 in", "material": "archival matte paper", "price": 70, "paymentLink": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "untitled-gouache",
+      "title": "Untitled",
+      "year": "2024",
+      "medium": "Gouache on rough paper",
+      "dimensions": "Dimensions on request",
+      "aspectRatio": "1170 / 1600",
+      "collection": "Works on paper",
+      "description": "Exact artist-approved short caption pending. Do not paraphrase.",
+      "thesis": "Paste exact artist-approved thesis / description here. Do not paraphrase.",
+      "image": "assets/artwork/untitled-gouache.jpg",
+      "imageMd": "assets/artwork/untitled-gouache-md.jpg",
+      "alt": "Untitled — gouache on rough paper, geometric cubist face composition",
+      "featured": false,
+      "tags": ["gouache", "paper"],
+      "availabilityLabel": "Original by inquiry · Prints coming soon",
+      "original": { "saleMode": "inquiry-only", "priceLabel": "Inquire" },
+      "images": [
+        { "src": "assets/artwork/untitled-gouache.jpg", "alt": "Untitled — full view", "caption": "Full view" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Archival print",
+          "description": "Open edition archival pigment print on matte fine-art paper.",
+          "status": "default",
+          "variants": [
+            { "sku": "UNTITLED_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "UNTITLED_8X11", "size": "Print 8 × 11 in", "material": "archival matte paper", "price": 35, "paymentLink": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spark-my-heart",
+      "title": "Spark My Heart",
+      "year": "2023",
+      "medium": "Photography — light painting",
+      "dimensions": "Edition size on request",
+      "aspectRatio": "1 / 1",
+      "collection": "Photography",
+      "description": "Exact artist-approved short caption pending. Do not paraphrase.",
+      "thesis": "Paste exact artist-approved thesis / description here. Do not paraphrase.",
+      "image": "assets/artwork/spark-my-heart.jpg",
+      "imageMd": "assets/artwork/spark-my-heart-md.jpg",
+      "alt": "Spark My Heart — light-painting photograph forming a glowing heart on black",
+      "featured": false,
+      "tags": ["photography", "light painting"],
+      "availabilityLabel": "Print by inquiry — coming soon",
+      "original": { "saleMode": "not-applicable", "priceLabel": "" },
+      "images": [
+        { "src": "assets/artwork/spark-my-heart.jpg", "alt": "Spark My Heart — full view", "caption": "Full view" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Photo print",
+          "description": "Archival pigment photo print, signed and numbered.",
+          "status": "default",
+          "variants": [
+            { "sku": "SPARK_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "SPARK_8X8", "size": "Print 8 × 8 in", "material": "archival photo paper", "price": 40, "paymentLink": "" },
+            { "sku": "SPARK_12X12", "size": "Print 12 × 12 in", "material": "archival photo paper", "price": 75, "paymentLink": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "speed-of-light",
+      "title": "Speed Of Light",
+      "year": "2023",
+      "medium": "Photography — long exposure",
+      "dimensions": "Edition size on request",
+      "aspectRatio": "2000 / 1333",
+      "collection": "Photography",
+      "description": "Exact artist-approved short caption pending. Do not paraphrase.",
+      "thesis": "Paste exact artist-approved thesis / description here. Do not paraphrase.",
+      "image": "assets/artwork/speed-of-light.jpg",
+      "imageMd": "assets/artwork/speed-of-light-md.jpg",
+      "alt": "Speed Of Light — long-exposure night photograph of light trails across a bridge over water",
+      "featured": false,
+      "tags": ["photography", "long exposure"],
+      "availabilityLabel": "Print by inquiry — coming soon",
+      "original": { "saleMode": "not-applicable", "priceLabel": "" },
+      "images": [
+        { "src": "assets/artwork/speed-of-light.jpg", "alt": "Speed Of Light — full view", "caption": "Full view" }
+      ],
+      "products": [
+        {
+          "type": "print",
+          "name": "Photo print",
+          "description": "Archival pigment photo print, signed and numbered.",
+          "status": "default",
+          "variants": [
+            { "sku": "SPEED_POSTCARD", "size": "Postcard 4 × 6 in", "material": "matte postcard stock", "price": 8, "paymentLink": "" },
+            { "sku": "SPEED_12X8", "size": "Print 12 × 8 in", "material": "archival photo paper", "price": 45, "paymentLink": "" },
+            { "sku": "SPEED_18X12", "size": "Print 18 × 12 in", "material": "archival photo paper", "price": 90, "paymentLink": "" }
+          ]
+        }
+      ]
+    }
+  ]
+}

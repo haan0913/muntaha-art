@@ -1,0 +1,139 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+publish_mode: editorial_workflow
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Site Settings"
+        name: "site"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - label: "Site"
+            name: "site"
+            widget: "object"
+            fields:
+              - { label: "Artist Name", name: "artistName", widget: "string" }
+              - { label: "Site Title", name: "title", widget: "string" }
+              - { label: "Domain", name: "domain", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Landing"
+            name: "landing"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Hero Image", name: "image", widget: "image" }
+              - { label: "Hero Image Alt Text", name: "imageAlt", widget: "string" }
+              - { label: "Instagram Label", name: "instagramLabel", widget: "string", required: false }
+              - { label: "Instagram URL", name: "instagramUrl", widget: "string", required: false }
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - label: "Facts"
+                name: "facts"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Value", name: "value", widget: "string" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "City", name: "city", widget: "string" }
+              - { label: "Note", name: "note", widget: "text", required: false }
+          - label: "Analytics"
+            name: "analytics"
+            widget: "object"
+            fields:
+              - { label: "Google Measurement ID", name: "googleMeasurementId", widget: "string", required: false }
+
+  - name: "catalog"
+    label: "Catalog"
+    files:
+      - label: "Artworks"
+        name: "artworks"
+        file: "content/artworks.json"
+        format: "json"
+        fields:
+          - label: "Artworks"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            hint: "Each artwork supports apparel-style cards plus a detail slideshow. Paste exact artist-approved descriptions; do not paraphrase."
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Medium", name: "medium", widget: "string" }
+              - { label: "Dimensions", name: "dimensions", widget: "string" }
+              - { label: "Collection", name: "collection", widget: "string" }
+              - { label: "Card Description", name: "description", widget: "text" }
+              - { label: "Thesis / Exact Description", name: "thesis", widget: "text", required: false }
+              - { label: "Primary Image", name: "image", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+              - label: "Slideshow Images"
+                name: "images"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+                  - { label: "Caption", name: "caption", widget: "string", required: false }
+              - { label: "Featured", name: "featured", widget: "boolean", default: false }
+              - { label: "Tags", name: "tags", widget: "list", field: { label: "Tag", name: "tag", widget: "string" } }
+              - { label: "Availability Label", name: "availabilityLabel", widget: "string" }
+              - label: "Original Sale Policy"
+                name: "original"
+                widget: "object"
+                fields:
+                  - { label: "Sale Mode", name: "saleMode", widget: "select", options: ["inquiry-only", "not-applicable"], default: "inquiry-only" }
+                  - { label: "Price Label", name: "priceLabel", widget: "string", required: false }
+              - label: "Shop Products"
+                name: "products"
+                widget: "list"
+                summary: "{{fields.name}}"
+                fields:
+                  - { label: "Type", name: "type", widget: "select", options: ["print", "card", "sticker", "digital", "commission"] }
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Status", name: "status", widget: "string", default: "draft" }
+                  - label: "Variants"
+                    name: "variants"
+                    widget: "list"
+                    fields:
+                      - { label: "SKU", name: "sku", widget: "string" }
+                      - { label: "Size", name: "size", widget: "string" }
+                      - { label: "Material", name: "material", widget: "string", required: false }
+                      - { label: "Price", name: "price", widget: "number", required: false, value_type: "float" }
+                      - { label: "Stripe Payment Link", name: "paymentLink", widget: "string", required: false }
+      - label: "Studio Diary"
+        name: "journal"
+        file: "content/journal.json"
+        format: "json"
+        fields:
+          - label: "Entries"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false }
+              - { label: "Date Label", name: "dateLabel", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Excerpt", name: "excerpt", widget: "text" }
+              - { label: "Tags", name: "tags", widget: "list", field: { label: "Tag", name: "tag", widget: "string" } }
