@@ -377,7 +377,7 @@ function buildSeriesNav(art) {
       <h3 id="dialog-series-heading">Chārjon series</h3>
       <div class="series-nav">
         ${related
-          .map((item) => `<button type="button" data-series-art="${escapeHtml(item.id)}">${escapeHtml(item.title.replace("Chārjon ", ""))}</button>`)
+          .map((item) => `<button type="button" data-series-art="${escapeHtml(item.id)}">${escapeHtml(item.id.replace("charjon-", ""))}</button>`)
           .join("")}
       </div>
     </section>
