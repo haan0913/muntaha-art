@@ -382,8 +382,9 @@ function openArtwork(id, options = {}) {
         <p class="eyebrow">${escapeHtml(art.collection || "Artwork")}</p>
         <h2 id="dialog-title">${escapeHtml(art.title)}</h2>
         <div class="dialog-actions">
-          <button class="btn btn-ghost btn-sm" type="button" data-share-art="${escapeHtml(art.id)}">Share</button>
-          <a class="dialog-copy-link" href="${escapeHtml(artworkUrl(art.id))}" data-art-link>Copy link</a>
+          <button class="btn btn-accent btn-sm dialog-share-btn" type="button" data-share-art="${escapeHtml(art.id)}">Share artwork</button>
+          <button class="btn btn-ghost btn-sm dialog-share-btn" type="button" data-copy-art="${escapeHtml(art.id)}">Copy link</button>
+          <a class="dialog-url" href="${escapeHtml(artworkUrl(art.id))}" data-art-link>${escapeHtml(artworkUrl(art.id))}</a>
           <span class="share-note" data-share-note role="status" aria-live="polite"></span>
         </div>
         <dl class="dialog-meta">
@@ -402,6 +403,7 @@ function openArtwork(id, options = {}) {
   renderDialogStage(art);
   const dialog = $("#art-dialog");
   $("[data-share-art]")?.addEventListener("click", () => shareArtwork(art));
+  $("[data-copy-art]")?.addEventListener("click", () => copyArtworkLink(art.id));
   $("[data-art-link]")?.addEventListener("click", (e) => {
     e.preventDefault();
     copyArtworkLink(art.id);
