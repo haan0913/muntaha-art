@@ -842,14 +842,16 @@ main { display: block; }
 
 .dialog-series,
 .dialog-shop {
-  border-top: 1px solid var(--line);
-  padding-top: 1.5rem;
   display: grid;
   gap: 1rem;
 }
+.dialog-shop {
+  border-top: 1px solid var(--line);
+  padding-top: 1.5rem;
+}
 .dialog-series {
   border-bottom: 1px solid var(--line);
-  padding-bottom: 1.15rem;
+  padding: 1.15rem 0;
   gap: 0.75rem;
 }
 .dialog-series h3,
