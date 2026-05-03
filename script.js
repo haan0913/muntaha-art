@@ -44,13 +44,30 @@ const studioEmail = () => state.site?.contact?.email || "muntaharaiba@gmail.com"
 const mailtoUrl = ({ subject, body }) =>
   `mailto:${encodeURIComponent(studioEmail())}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
+function artworkUrl(id) {
+  const url = new URL(window.location.href);
+  url.hash = `#/work/${encodeURIComponent(id)}`;
+  return url.toString();
+}
+
 /* ---------- Routing ---------- */
-function getRouteFromHash() {
+function getHashParts() {
   const hash = window.location.hash.replace(/^#\/?/, "").trim();
+  return hash ? hash.split("/").filter(Boolean) : [];
+}
+
+function getRouteFromHash() {
+  const parts = getHashParts();
+  const hash = parts[0] || "";
   if (!hash || hash === "top" || hash === "about") return "home";
   // Legacy: "shop" route folds into "work"
   if (hash === "shop") return "work";
   return ROUTES.has(hash) ? hash : "home";
+}
+
+function getArtworkIdFromHash() {
+  const parts = getHashParts();
+  return parts[0] === "work" && parts[1] ? decodeURIComponent(parts[1]) : null;
 }
 
 function showRoute(route = getRouteFromHash()) {
@@ -75,6 +92,10 @@ function showRoute(route = getRouteFromHash()) {
   }
   window.scrollTo({ top: 0, behavior: "instant" });
   requestAnimationFrame(applyReveal);
+  const linkedArtworkId = getArtworkIdFromHash();
+  if (route === "work" && linkedArtworkId) {
+    requestAnimationFrame(() => openArtwork(linkedArtworkId, { updateHash: false }));
+  }
 }
 
 function setupNav() {
@@ -341,11 +362,15 @@ function renderDialogStage(art) {
   }
 }
 
-function openArtwork(id) {
+function openArtwork(id, options = {}) {
+  const { updateHash = true } = options;
   const art = state.artworks.find((a) => a.id === id);
   if (!art) return;
   state.activeArtworkId = id;
   state.activeImageIndex = 0;
+  if (updateHash) {
+    history.pushState(null, "", artworkUrl(id));
+  }
 
   $("#dialog-content").innerHTML = `
     <div class="dialog-layout">
@@ -356,6 +381,11 @@ function openArtwork(id) {
       <div class="dialog-copy">
         <p class="eyebrow">${escapeHtml(art.collection || "Artwork")}</p>
         <h2 id="dialog-title">${escapeHtml(art.title)}</h2>
+        <div class="dialog-actions">
+          <button class="btn btn-ghost btn-sm" type="button" data-share-art="${escapeHtml(art.id)}">Share</button>
+          <a class="dialog-copy-link" href="${escapeHtml(artworkUrl(art.id))}" data-art-link>Copy link</a>
+          <span class="share-note" data-share-note role="status" aria-live="polite"></span>
+        </div>
         <dl class="dialog-meta">
           <div class="dialog-meta-row"><dt>Year</dt><dd>${escapeHtml(art.year)}</dd></div>
           <div class="dialog-meta-row"><dt>Medium</dt><dd>${escapeHtml(art.medium)}</dd></div>
@@ -371,21 +401,77 @@ function openArtwork(id) {
   `;
   renderDialogStage(art);
   const dialog = $("#art-dialog");
+  $("[data-share-art]")?.addEventListener("click", () => shareArtwork(art));
+  $("[data-art-link]")?.addEventListener("click", (e) => {
+    e.preventDefault();
+    copyArtworkLink(art.id);
+  });
   if (dialog.showModal) dialog.showModal();
   else dialog.setAttribute("open", "");
 }
 
+async function copyText(text) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+  const input = document.createElement("textarea");
+  input.value = text;
+  input.setAttribute("readonly", "");
+  input.style.position = "fixed";
+  input.style.opacity = "0";
+  document.body.appendChild(input);
+  input.select();
+  document.execCommand("copy");
+  input.remove();
+}
+
+function setShareNote(message) {
+  const note = $("[data-share-note]");
+  if (note) note.textContent = message;
+}
+
+async function copyArtworkLink(id) {
+  try {
+    await copyText(artworkUrl(id));
+    setShareNote("Link copied");
+  } catch {
+    setShareNote("Copy failed");
+  }
+}
+
+async function shareArtwork(art) {
+  const url = artworkUrl(art.id);
+  const data = {
+    title: `${art.title} — Muntaha Rahman`,
+    text: `${art.title} by Muntaha Rahman`,
+    url,
+  };
+  try {
+    if (navigator.share) {
+      await navigator.share(data);
+      setShareNote("Shared");
+    } else {
+      await copyText(url);
+      setShareNote("Link copied");
+    }
+  } catch (err) {
+    if (err?.name !== "AbortError") setShareNote("Share canceled");
+  }
+}
+
 function setupDialog() {
   const dialog = $("#art-dialog");
-  $(".dialog-close")?.addEventListener("click", () => {
+  const closeDialog = () => {
     if (dialog.close) dialog.close();
     else dialog.removeAttribute("open");
-  });
+    if (getArtworkIdFromHash()) history.pushState(null, "", "#/work");
+  };
+  $(".dialog-close")?.addEventListener("click", closeDialog);
   // Click backdrop to close
   dialog?.addEventListener("click", (e) => {
     if (e.target === dialog) {
-      if (dialog.close) dialog.close();
-      else dialog.removeAttribute("open");
+      closeDialog();
     }
   });
 }

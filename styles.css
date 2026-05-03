@@ -739,6 +739,31 @@ main { display: block; }
   font-weight: 400;
   margin-bottom: 0;
 }
+.dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+.dialog-copy-link {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+.dialog-copy-link:hover,
+.dialog-copy-link:focus-visible {
+  color: var(--accent-deep);
+}
+.share-note {
+  min-height: 1.2em;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-style: italic;
+}
 .dialog-meta {
   display: grid;
   grid-template-columns: 1fr;
