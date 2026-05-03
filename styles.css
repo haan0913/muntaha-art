@@ -851,8 +851,9 @@ main { display: block; }
 }
 .dialog-series {
   border-bottom: 1px solid var(--line);
-  padding: 1.15rem 0;
-  gap: 0.75rem;
+  margin-top: -1.25rem;
+  padding: 1rem 0;
+  gap: 0.65rem;
 }
 .dialog-series h3,
 .dialog-shop h3 {
