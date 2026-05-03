@@ -14,13 +14,21 @@
   "about": {
     "title": "About",
     "paragraphs": [
-      "I'm a painter and photographer raised in New York by parents who came from Bangladesh. We lived with very little — many of us under one roof — and for a long time, privacy felt like a luxury. My parents worked incredibly hard so that I could eventually have a room of my own, a space to sit with my emotions, explore my creativity, and discover who I was without interruption.",
-      "That same impulse runs through my work. I paint the objects, rooms, and people that hold the lives my parents set aside so I could live mine. I am a painter today because they gave me the opportunity to become one."
+      "I'm Bengali artist whose work is shaped by memory, family, and the search for self. Growing up in a crowded home taught me how much privacy, independence, and self-expression can mean. My paintings often reflect the quiet emotional weight of ordinary objects and spaces, turning personal history into images of identity, belonging, and freedom."
     ],
     "facts": [
-      { "label": "Practice", "value": "Painter, Photographer" },
-      { "label": "Education", "value": "Queens College, CUNY — BFA Painting, 2026" },
-      { "label": "Based in", "value": "New York" }
+      {
+        "label": "Practice",
+        "value": "Painter, Photographer"
+      },
+      {
+        "label": "Education",
+        "value": "Queens College, CUNY — BFA Painting, 2026"
+      },
+      {
+        "label": "Based in",
+        "value": "New York"
+      }
     ],
     "portraitImage": "assets/artwork/muntaha-portrait-gallery.jpg",
     "portraitAlt": "Muntaha Rahman beside For Them, From Me at a gallery exhibition"
