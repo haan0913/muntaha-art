@@ -380,12 +380,17 @@ function openArtwork(id, options = {}) {
       </div>
       <div class="dialog-copy">
         <p class="eyebrow">${escapeHtml(art.collection || "Artwork")}</p>
-        <h2 id="dialog-title">${escapeHtml(art.title)}</h2>
-        <div class="dialog-actions">
-          <button class="btn btn-accent btn-sm dialog-share-btn" type="button" data-share-art="${escapeHtml(art.id)}">Share artwork</button>
-          <button class="btn btn-ghost btn-sm dialog-share-btn" type="button" data-copy-art="${escapeHtml(art.id)}">Copy link</button>
-          <a class="dialog-url" href="${escapeHtml(artworkUrl(art.id))}" data-art-link>${escapeHtml(artworkUrl(art.id))}</a>
-          <span class="share-note" data-share-note role="status" aria-live="polite"></span>
+        <div class="dialog-title-row">
+          <h2 id="dialog-title">${escapeHtml(art.title)}</h2>
+          <div class="dialog-share-wrap">
+            <button class="dialog-share-btn" type="button" data-share-art="${escapeHtml(art.id)}" aria-label="Share ${escapeHtml(art.title)}">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.5 12.5 16.5 7.5M7.5 11.5l9 5M18 8.75a2.75 2.75 0 1 0 0-5.5 2.75 2.75 0 0 0 0 5.5ZM6 14.75a2.75 2.75 0 1 0 0-5.5 2.75 2.75 0 0 0 0 5.5ZM18 20.75a2.75 2.75 0 1 0 0-5.5 2.75 2.75 0 0 0 0 5.5Z"/>
+              </svg>
+              <span>Share</span>
+            </button>
+            <span class="share-note" data-share-note role="status" aria-live="polite"></span>
+          </div>
         </div>
         <dl class="dialog-meta">
           <div class="dialog-meta-row"><dt>Year</dt><dd>${escapeHtml(art.year)}</dd></div>
@@ -403,11 +408,6 @@ function openArtwork(id, options = {}) {
   renderDialogStage(art);
   const dialog = $("#art-dialog");
   $("[data-share-art]")?.addEventListener("click", () => shareArtwork(art));
-  $("[data-copy-art]")?.addEventListener("click", () => copyArtworkLink(art.id));
-  $("[data-art-link]")?.addEventListener("click", (e) => {
-    e.preventDefault();
-    copyArtworkLink(art.id);
-  });
   if (dialog.showModal) dialog.showModal();
   else dialog.setAttribute("open", "");
 }
@@ -428,9 +428,15 @@ async function copyText(text) {
   input.remove();
 }
 
+let shareNoteTimer = null;
 function setShareNote(message) {
   const note = $("[data-share-note]");
-  if (note) note.textContent = message;
+  if (!note) return;
+  note.textContent = message;
+  if (shareNoteTimer) clearTimeout(shareNoteTimer);
+  shareNoteTimer = setTimeout(() => {
+    note.textContent = "";
+  }, 1800);
 }
 
 async function copyArtworkLink(id) {
@@ -452,7 +458,6 @@ async function shareArtwork(art) {
   try {
     if (navigator.share) {
       await navigator.share(data);
-      setShareNote("Shared");
     } else {
       await copyText(url);
       setShareNote("Link copied");
