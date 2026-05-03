@@ -1,18 +1,18 @@
-# Cloudflare Pages deployment
+# Cloudflare deployment
 
-This site is a static portfolio. Use Cloudflare Pages with the generated `dist/`
-folder as the deploy artifact.
+This site is a static portfolio. Cloudflare's current recommended flow for new
+static sites is Workers Static Assets. The build creates a clean `dist/` folder,
+and `wrangler.toml` tells Cloudflare to serve that folder as static assets.
 
 ## Recommended settings
 
-If connecting this folder through Git:
+If connecting this repository through the Cloudflare dashboard:
 
-- Framework preset: **None**
-- Root directory: `projects/muntaha-art` if Cloudflare is pointed at the
-  larger `AI_STATION` repository; otherwise leave blank if this folder is the
-  repository root.
+- Project name: `muntaha-art`
 - Build command: `npm run build`
-- Build output directory: `dist`
+- Deploy command: `npx wrangler deploy`
+- Non-production branch deploy command: `npx wrangler versions upload`
+- Path/root directory: `/`
 - Environment variables: none required
 
 If using Direct Upload:
@@ -23,10 +23,10 @@ npm run build
 ```
 
 Then upload the `dist` folder in the Cloudflare Pages dashboard, or deploy it
-with Wrangler:
+with Wrangler as a Worker static-assets project:
 
 ```powershell
-npx wrangler pages deploy dist --project-name=muntaha-art
+npx wrangler deploy
 ```
 
 ## What goes live
@@ -46,7 +46,6 @@ removed artwork assets.
 
 ## Domain
 
-After the Pages project is deployed, add `muntaha.art` as a custom domain in
-Cloudflare Pages. If Cloudflare is also handling DNS, add the domain to
-Cloudflare and update the Spaceship nameservers to the two Cloudflare
-nameservers shown in the dashboard.
+After the project is deployed, add `muntaha.art` as a custom domain. If
+Cloudflare is also handling DNS, add the domain to Cloudflare and update the
+Spaceship nameservers to the two Cloudflare nameservers shown in the dashboard.
