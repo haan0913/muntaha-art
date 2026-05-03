@@ -246,6 +246,9 @@ function buildArtworkCard(art) {
   const ratio = art.aspectRatio || "4 / 5";
   const cls = classifyCard(art);
   const src = art.imageMd || art.image;
+  const seriesTag = art.id?.startsWith("charjon-")
+    ? `<span class="catalog-tag is-series">Series · 4 pieces</span>`
+    : "";
   return `
     <button type="button" class="catalog-card ${cls}" data-art-id="${escapeHtml(art.id)}" aria-label="Open ${escapeHtml(art.title)} details">
       <div class="catalog-image-wrap" style="aspect-ratio: ${ratio};">
@@ -256,6 +259,7 @@ function buildArtworkCard(art) {
         <span class="catalog-meta-title">${escapeHtml(art.title)}</span>
         <span class="catalog-meta-year">${escapeHtml(art.year)}</span>
         <span class="catalog-meta-sub">${escapeHtml(art.medium)} · ${escapeHtml(art.dimensions)}</span>
+        ${seriesTag}
         <span class="catalog-tag is-prints">Prints — coming soon</span>
       </div>
     </button>
@@ -362,6 +366,24 @@ function renderDialogStage(art) {
   }
 }
 
+function buildSeriesNav(art) {
+  if (!art.id?.startsWith("charjon-")) return "";
+  const related = state.artworks
+    .filter((item) => item.id?.startsWith("charjon-") && item.id !== art.id)
+    .sort((a, b) => a.id.localeCompare(b.id, undefined, { numeric: true }));
+  if (!related.length) return "";
+  return `
+    <section class="dialog-series" aria-labelledby="dialog-series-heading">
+      <h3 id="dialog-series-heading">Chārjon series</h3>
+      <div class="series-nav">
+        ${related
+          .map((item) => `<button type="button" data-series-art="${escapeHtml(item.id)}">${escapeHtml(item.title.replace("Chārjon ", ""))}</button>`)
+          .join("")}
+      </div>
+    </section>
+  `;
+}
+
 function openArtwork(id, options = {}) {
   const { updateHash = true } = options;
   const art = state.artworks.find((a) => a.id === id);
@@ -401,6 +423,7 @@ function openArtwork(id, options = {}) {
           <h3>Thesis</h3>
           <p>${escapeHtml(art.thesis || art.description || "Statement coming soon.")}</p>
         </div>
+        ${buildSeriesNav(art)}
         ${buildShopBlock(art)}
       </div>
     </div>
@@ -408,6 +431,9 @@ function openArtwork(id, options = {}) {
   renderDialogStage(art);
   const dialog = $("#art-dialog");
   $("[data-share-art]")?.addEventListener("click", () => shareArtwork(art));
+  $$("[data-series-art]").forEach((button) =>
+    button.addEventListener("click", () => openArtwork(button.dataset.seriesArt))
+  );
   if (dialog.showModal) dialog.showModal();
   else dialog.setAttribute("open", "");
 }
