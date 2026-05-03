@@ -15,6 +15,7 @@ const copyEntries = [
   "_headers",
   "_redirects",
   "content",
+  "assets/brand",
 ];
 
 const artworkAllowlist = [
