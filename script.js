@@ -419,11 +419,11 @@ function openArtwork(id, options = {}) {
           <div class="dialog-meta-row"><dt>Medium</dt><dd>${escapeHtml(art.medium)}</dd></div>
           <div class="dialog-meta-row"><dt>Dimensions</dt><dd>${escapeHtml(art.dimensions)}</dd></div>
         </dl>
+        ${buildSeriesNav(art)}
         <div class="dialog-thesis">
           <h3>Thesis</h3>
           <p>${escapeHtml(art.thesis || art.description || "Statement coming soon.")}</p>
         </div>
-        ${buildSeriesNav(art)}
         ${buildShopBlock(art)}
       </div>
     </div>
