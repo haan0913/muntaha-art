@@ -260,7 +260,7 @@ function buildArtworkCard(art) {
         <span class="catalog-meta-year">${escapeHtml(art.year)}</span>
         <span class="catalog-meta-sub">${escapeHtml(art.medium)} · ${escapeHtml(art.dimensions)}</span>
         ${seriesTag}
-        <span class="catalog-tag is-prints">Prints — coming soon</span>
+        ${(art.products || []).length ? '<span class="catalog-tag is-prints">Prints — coming soon</span>' : ''}
       </div>
     </button>
   `;

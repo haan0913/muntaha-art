@@ -407,6 +407,28 @@
           ]
         }
       ]
+    },
+    {
+      "id": "buldak-spicy-ramen",
+      "title": "Buldak Spicy Ramen",
+      "year": "Undated",
+      "medium": "Experimental typography and poster design",
+      "dimensions": "2700 × 4200 px",
+      "aspectRatio": "9 / 14",
+      "collection": "Typography",
+      "description": "Recipe poster featuring ingredient-built lettering for Buldak spicy ramen.",
+      "thesis": "Recipe poster featuring ingredient-built lettering for Buldak spicy ramen.",
+      "image": "assets/artwork/buldak-spicy-ramen.jpg",
+      "imageMd": "assets/artwork/buldak-spicy-ramen-md.jpg",
+      "alt": "Buldak Spicy Ramen recipe poster with the title constructed from sauces, noodles, and seasonings",
+      "featured": false,
+      "tags": ["typography", "design", "poster"],
+      "availabilityLabel": "Portfolio work",
+      "original": { "saleMode": "not-applicable", "priceLabel": "" },
+      "images": [
+        { "src": "assets/artwork/buldak-spicy-ramen.jpg", "alt": "Buldak Spicy Ramen typography recipe poster — full view", "caption": "Full poster" }
+      ],
+      "products": []
     }
   ]
 }

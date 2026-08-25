@@ -21,6 +21,8 @@ const copyEntries = [
 const artworkAllowlist = [
   "barely-hanging.jpg",
   "barely-hanging-md.jpg",
+  "buldak-spicy-ramen.jpg",
+  "buldak-spicy-ramen-md.jpg",
   "charjon-1.jpg",
   "charjon-1-md.jpg",
   "charjon-2.jpg",
